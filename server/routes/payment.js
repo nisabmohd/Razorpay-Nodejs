@@ -16,6 +16,6 @@ router.post('/checkout', async (req, res) => {
 })
 
 router.post('/paymentverf', (req, res) => {
-    res.status(200).send({ success: true })
+    res.redirect(`${process.env.frontend}/success`)
 })
 module.exports = router

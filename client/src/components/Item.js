@@ -26,7 +26,7 @@ export function Item(props) {
                     description: "Test Transaction",
                     image: "https://avatars.githubusercontent.com/u/76525761?v=4",
                     order_id:data.id,
-                    callback_url: "http:localhost:8000/payment/paymentverf",
+                    callback_url: `${process.env.React_App_url}/payment/paymentverf`,
                     prefill: {
                         name: "John Lackner",
                         email: "lacknerjohn@example.com",
