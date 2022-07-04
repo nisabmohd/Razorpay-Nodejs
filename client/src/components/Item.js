@@ -25,7 +25,7 @@ export function Item(props) {
                     name: "Nisab Mohd",
                     description: "Test Transaction",
                     image: "https://avatars.githubusercontent.com/u/76525761?v=4",
-                    order_id:data.id,
+                    order_id: data.id,
                     callback_url: `${process.env.React_App_url}/payment/paymentverf`,
                     prefill: {
                         name: "John Lackner",
@@ -41,7 +41,7 @@ export function Item(props) {
                 };
                 const razor = new window.Razorpay(options);
                 razor.open()
-                console.log(data);
+                console.log(data.id);
             })
             .catch((error) => {
                 console.error('Error:', error);
